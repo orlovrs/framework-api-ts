@@ -1,3 +1,6 @@
+.idea
+mochawesome-report
+
 # Logs
 logs
 *.log
