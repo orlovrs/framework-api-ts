@@ -55,11 +55,11 @@ export class HttpRequest {
             })
             .then(res => {
                 console.log(res)
-                return new HttpResponse(res.statusCode, res.headers, res.body)
+                return new HttpResponse(this.options, res.statusCode, res.headers, res.body)
             })
             .catch(err => {
                 this.logResponse(err.response)
-                return new HttpResponse(err.response.statusCode, err.response.headers, err.response.body)
+                return new HttpResponse(this.options, err.response.statusCode, err.response.headers, err.response.body)
             })
     }
 

@@ -3,23 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "mocha --reporter mochawesome --require ts-node/register ./test/**/*.test.ts"
+    "test": "cucumber-js -f html:report.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
     "@swc/core": "^1.2.98",
     "@types/chai": "^4.2.22",
+    "@types/cucumber": "^7.0.0",
     "@types/faker": "^5.5.9",
-    "@types/mocha": "^9.0.0",
-    "@types/mochawesome": "^6.2.1",
+    "@types/jsonpath": "^0.2.0",
     "@types/node": "^16.11.0",
     "chai": "^4.3.4",
+    "cucumber-pretty": "^6.0.0",
+    "cucumber-tsflow": "^4.0.0-preview.7",
     "dotenv": "^10.0.0",
     "faker": "^5.5.3",
+    "fs-extra": "^10.0.0",
     "got": "^11.8.2",
-    "mocha": "^9.1.3",
-    "mochawesome": "^6.3.1",
+    "jsonpath": "^1.1.1",
+    "moment": "^2.29.1",
     "openapi-typescript": "^4.4.0",
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
